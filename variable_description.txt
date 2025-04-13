@@ -1,0 +1,14 @@
+- ID
+    - It is a unique value corresponding to the entry of the customer, per Month
+    - Does not provide valuable information for modelling, can be dropped. Why? ID is unique, we do not expect it to show again in upcoming data, so we can take it away.
+
+- Customer_ID
+    - There are 12500 values in the dataset. We have the data of clients for 8 months, which would make up for the 100k observations that we have. This also implies that we have taken information of customers that have been in the balance sheet of the bank for at least 8 months.
+
+- Month
+    - Corresponds to the month of the observation. This can be useful for the ançaysis sinceseasonality might impact credit scores.
+    - There are 44 unique values, which we know it is not possible because there are only 12 months. This hints for data cleaning. Fortunately, it does not have missing values.
+    - We have the data for just 8 months of the year out of 12. This means that there is part of the seasonality that we cannot account for. How do we handle this? How do we tell the model to treat the months September - December.
+
+- Credit_Utilization_Ratio
+    - Together with ID, are the only two columns that actually have 100k unqiue observations.
