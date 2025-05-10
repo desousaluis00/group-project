@@ -1,0 +1,6 @@
+dropout_p: 0.5
+hidden_dims: !!python/tuple
+- 100
+- 50
+input_dim: 43
+lr: 0.001
